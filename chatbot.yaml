@@ -1,4 +1,4 @@
-name: zb-cailapub
+name: khub-default-template-ru
 
 entryPoint: main.sc
 
@@ -11,5 +11,5 @@ tests:
 
 nlp:
   intentNoMatchThresholds:
-    phrases: 0.2
-    patterns: 0.2
+    phrases: 0.5
+    patterns: 0.5

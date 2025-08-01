@@ -1,0 +1,40 @@
+{
+  "positions" : [ {
+    "id" : "/Start",
+    "x" : 1677,
+    "y" : 958
+  }, {
+    "id" : "/Question",
+    "x" : 2237,
+    "y" : 775
+  }, {
+    "id" : "/GetQuestion",
+    "x" : 762,
+    "y" : 1599
+  }, {
+    "id" : "/KHub",
+    "x" : 1672,
+    "y" : 1633
+  }, {
+    "id" : "/Feedback",
+    "x" : 2237,
+    "y" : 1717
+  }, {
+    "id" : "/NegativeFeedback",
+    "x" : 762,
+    "y" : 2333
+  }, {
+    "id" : "/PositiveFeedback",
+    "x" : 762,
+    "y" : 3233
+  }, {
+    "id" : "/",
+    "x" : 17,
+    "y" : 12
+  }, {
+    "id" : "/KnowledgeBase",
+    "name" : "KnowledgeBase",
+    "x" : 0,
+    "y" : 0
+  } ]
+}

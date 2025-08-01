@@ -1,97 +1,713 @@
 {
-    "project": {
-        "id": "zb-cailapub",
-        "name": "zb-cailapub",
-        "folder": "/platform"
+  "project" : {
+    "id" : "baza_znanij_vopros_o-1000086716-Inq",
+    "name" : "baza_znanij_vopros_o-1000086716-Inq",
+    "folder" : "/platform"
+  },
+  "settings" : {
+    "language" : "ru",
+    "spellingCorrection" : false,
+    "classificationAlgorithm" : "sts",
+    "timezone" : "UTC+03:00",
+    "extendedSettings" : {
+      "tokenizerEngine" : "mystem",
+      "useShared" : false
     },
-    "settings": {
-        "language": "ru",
-        "spellingCorrection": false,
-        "classificationAlgorithm": "sts",
-        "validation": {
-            "phraseValidationEnabled": true,
-            "answerValidationEnabled": true,
-            "phraseValidationThreshold": 0.5,
-            "answerValidationThreshold": 0.8
-        },
-        "timezone": "Europe/Moscow",
-        "extendedSettings": {
-            "classificationAlgorithmVersion": 1.0,
-            "tokenizerEngine": "mystem",
-            "useShared": false
-        }
+    "shared" : false,
+    "validation" : {
+      "phraseValidationEnabled" : true,
+      "answerValidationEnabled" : true,
+      "phraseValidationThreshold" : 0.5,
+      "answerValidationThreshold" : 0.8
+    }
+  },
+  "intents" : [ {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Вопросы о доставке/Когда приедет курьер?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "В каком часу приедет курьер?"
+    }, {
+      "text" : "Во сколько ожидать курьера?"
+    }, {
+      "text" : "Когда будет курьер?"
+    }, {
+      "text" : "Когда приедет курьер?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
     },
-    "intents": [
-        {
-            "path": "/пока",
-            "description": null,
-            "answer": null,
-            "customData": null,
-            "enabled": true,
-            "phrases": [
-                {
-                    "text": "пока",
-                    "entities": null
-                }
-            ],
-            "patterns": null,
-            "slots": null
-        },
-        {
-            "path": "/привет",
-            "description": null,
-            "answer": null,
-            "customData": null,
-            "enabled": true,
-            "phrases": [
-                {
-                    "text": "привет",
-                    "entities": null
-                }
-            ],
-            "patterns": null,
-            "slots": null
-        }
-    ],
-    "entities": [],
-    "enabledSystemEntities": [
-        "duckling.number",
-        "duckling.time",
-        "duckling.duration",
-        "duckling.phone-number",
-        "duckling.email",
-        "duckling.url"
-    ],
-    "systemEntities": [
-        {
-            "name": "duckling.number",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.time",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.duration",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.phone-number",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.email",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.url",
-            "version": "v2",
-            "enabled": true
-        }
-    ]
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Вопросы о доставке/Способ оплаты курьеру",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Курьеру могу заплатить?"
+    }, {
+      "text" : "Могу картой оплатить?"
+    }, {
+      "text" : "Способ оплаты курьеру"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Вопросы о доставке/Могут ли мне привезти заказ в определенное время?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Могу выбрать время доставки?"
+    }, {
+      "text" : "Могу принять только после "
+    }, {
+      "text" : "Хочу, чтобы привезли вечером"
+    }, {
+      "text" : "Хочу, чтобы привезли утром"
+    }, {
+      "text" : "Могут ли мне привезти заказ в определенное время?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Вопросы о доставке/Подъем на этаж",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "До квартиры донесут?"
+    }, {
+      "text" : "На этаж поднимут?"
+    }, {
+      "text" : "Подъем на этаж"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Вопросы о доставке/Если я не приму заказ, что будет?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Если я не приму заказ, что будет?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Вопросы о доставке/Могу ли я оплатить часть заказа сейчас, часть при получении?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Могу ли я оплатить часть заказа сейчас, часть при получении?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Вопросы о доставке/Как перенести доставку?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Как перенести доставку?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Вопросы о доставке/Нет номера курьера",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Не пришел номер телефона курьера"
+    }, {
+      "text" : "Нет смс с номером курьера"
+    }, {
+      "text" : "Нет номера курьера"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Записи/Как перенести запись?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Передвинуть время"
+    }, {
+      "text" : "Перенести время"
+    }, {
+      "text" : "Перенести запись"
+    }, {
+      "text" : "Как перенести запись?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Записи/Запись - опаздываю",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Опоздаю на минут"
+    }, {
+      "text" : "Стою в пробке, не успеваю"
+    }, {
+      "text" : "Запись - опаздываю"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Записи/Как отменить запись?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Запись аннулировать"
+    }, {
+      "text" : "Отмена записи"
+    }, {
+      "text" : "Отменить запись"
+    }, {
+      "text" : "Как отменить запись?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Записи/Подтверждена ли моя запись?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Подтвердите мою запись"
+    }, {
+      "text" : "Подтверждена ли моя запись?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Какая дата производства",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Какая дата изготовления"
+    }, {
+      "text" : "Когда изготовлены шины"
+    }, {
+      "text" : "Когда произведены шины"
+    }, {
+      "text" : "Какая дата производства"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Статус в ПУТИ",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Что такое в пути?"
+    }, {
+      "text" : "Статус в ПУТИ"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Продлить заказ",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Как продлить заказ"
+    }, {
+      "text" : "Как увеличить резерв?"
+    }, {
+      "text" : "Продлить заказ"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Какая страна производства",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "В какой стране произведены шины?"
+    }, {
+      "text" : "Где изготовлены шины"
+    }, {
+      "text" : "Какая страна производства"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Товар мне подходит?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Эти диски встанут без проблем?"
+    }, {
+      "text" : "Эти шины подойдут на мою машину?"
+    }, {
+      "text" : "Товар мне подходит?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Я могу прислать за шинами  другого человека?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Я могу прислать за шинами  другого человека?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Как отменить заказ?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Как отменить заказ?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Сумма заказа?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Сколько стоит мой заказ?"
+    }, {
+      "text" : "Сколько там по цене?"
+    }, {
+      "text" : "Стоимость заказа"
+    }, {
+      "text" : "Сумма к оплате"
+    }, {
+      "text" : "Сумма заказа?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Способ оплаты в магазине",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Могу в магазине заплатить СБП?"
+    }, {
+      "text" : "Могу в магазине заплатить картой?"
+    }, {
+      "text" : "Могу в магазине заплатить по QR - коду?"
+    }, {
+      "text" : "Способ оплаты в магазине"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Во сколько приедет заказ?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Во сколько будет в магазине?"
+    }, {
+      "text" : "Когда приедет в магазин?"
+    }, {
+      "text" : "Во сколько приедет заказ?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Состав заказа",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "А что я там купил?"
+    }, {
+      "text" : "Какие шины в заказе?"
+    }, {
+      "text" : "Что у меня в заказе?"
+    }, {
+      "text" : "Что я там заказал?"
+    }, {
+      "text" : "Состав заказа"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Root/Будет ли бесплатный шиномонтаж(МП)",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Монтаж бесплатно?"
+    }, {
+      "text" : "Шиномонтаж в подарок?"
+    }, {
+      "text" : "Будет ли бесплатный шиномонтаж(МП)"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Root/Будет ли расширенная гарантия( МП)",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Будет ли ваша расширенная гарантия?"
+    }, {
+      "text" : "Будет ли гарантия от айкон?"
+    }, {
+      "text" : "Будет ли гарантия от пирелли?"
+    }, {
+      "text" : "Будет ли расширенная гарантия( МП)"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Вопросы о доставке",
+    "enabled" : true,
+    "shared" : false,
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Записи",
+    "enabled" : true,
+    "shared" : false,
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Разное",
+    "enabled" : true,
+    "shared" : false,
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы/Root",
+    "enabled" : true,
+    "shared" : false,
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Общие вопросы",
+    "enabled" : true,
+    "shared" : false,
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  } ],
+  "entities" : [ ],
+  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
+  "spellerDictionary" : [ ],
+  "systemEntities" : [ {
+    "name" : "mystem.geo",
+    "enabled" : false
+  }, {
+    "name" : "mystem.persn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.obsc",
+    "enabled" : false
+  }, {
+    "name" : "mystem.patrn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.famn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.romn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.latn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.numb",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.intg",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.abbr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.name",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.surn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.patr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.geox",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.orgn",
+    "enabled" : false
+  }, {
+    "name" : "duckling.number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.ordinal",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.amount-of-money",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.distance",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.date",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time-of-day",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.duration",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.phone-number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.email",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.url",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.interval",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "mlps-obscene.obscene",
+    "enabled" : false
+  }, {
+    "name" : "zb.datetime",
+    "enabled" : false
+  }, {
+    "name" : "zb.number",
+    "enabled" : false
+  } ],
+  "faq" : [ {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Вопросы о доставке/Когда приедет курьер?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Курьер будет с 9 до 18, он свяжется с вами за час до доставки."
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Вопросы о доставке/Способ оплаты курьеру",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Если выбрали оплату при получении - Вы можете оплатить наличными и банковской картой. У курьера будет терминал"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Вопросы о доставке/Могут ли мне привезти заказ в определенное время?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Время доставки выбрать нельзя. Она состоится в течение дня. Курьер с Вами предварительно свяжется"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Вопросы о доставке/Подъем на этаж",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Доставка осуществляется только до подъезда. Подъем на этаж не производится"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Вопросы о доставке/Если я не приму заказ, что будет?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Заказ будет аннулирован. Просьба сообщить заранее и перенести доставку в удобный Вам день"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Вопросы о доставке/Могу ли я оплатить часть заказа сейчас, часть при получении?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Только если выбрали соответсующий способ оплаты при оформлении заказа. Данный вариант возможен при оплате Яндекс.Сплит или Плати.Частями от Сбера."
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Вопросы о доставке/Как перенести доставку?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Сообщите о переносе оператору."
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Вопросы о доставке/Нет номера курьера",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Если по каким-то причинам номер не поступил - ожидайте звонка курьера. Доставка состоится в течение назначенного дня. "
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Записи/Как перенести запись?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Перенести запись Вы можете в личном кабинете на сайте или сообщив об этом оператору."
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Записи/Запись - опаздываю",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Запись может быть аннулирована, если Вы не явитесь после 5 минут после начала. Сообщите оператору - он Вас соединит с сервисной зоной"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Записи/Как отменить запись?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Отменить запись Вы можете в личном кабинете на сайте или сообщить об этом оператору."
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Записи/Подтверждена ли моя запись?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : " Если Вы записались недавно - ожидайте звонка мастера или смс-сообщение, подтверждающее Вашу запись."
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Какая дата производства",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Дату производства можно уточнить только при получении товара."
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Статус в ПУТИ",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Статус \"В пути\" означает, что товар еще не прибыл в магазин. Ожидайте смс-сообщение о поступлении"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Продлить заказ",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Срок резерва ограничен. Для продления обратитесь к оператору."
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Какая страна производства",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Страну производства, если она не указана, можно уточнить только при получении товара. "
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Товар мне подходит?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Уточните у оператора применимость на Ваш автомобиль"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Я могу прислать за шинами  другого человека?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "При оплате онлайн, в кредит или рассрочку выдача осуществляется исключительно человеку, на которого оформлен заказ."
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Как отменить заказ?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Отменить заказ Вы можете в личном кабинете на сайте или сообщить об этом оператору."
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Сумма заказа?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : ""
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Способ оплаты в магазине",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Да, если выбран способ оплаты - при получении. Вы можете оплатить наличными или банковской картой, а также при помощи QR"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Во сколько приедет заказ?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Как только заказ поступит в магазин - мы уведомим Вас смс-сообщением. Поступление товара ожидается в течение дня."
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Разное/Состав заказа",
+    "replies" : [ {
+      "type" : "text",
+      "text" : ""
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Root/Будет ли бесплатный шиномонтаж(МП)",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "При покупке товара на маркетплейсах - все акции , доступные на сайте, не распространяются. Бесплатного шиномонтажа не будет"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Root/Будет ли расширенная гарантия( МП)",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "При покупке товара на маркетплейсах - все акции , доступные на сайте, не распространяются. Расширенной гарантии не будет"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Вопросы о доставке",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Записи",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Разное",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы/Root",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Общие вопросы",
+    "replies" : [ ]
+  } ],
+  "skills" : [ ]
 }
