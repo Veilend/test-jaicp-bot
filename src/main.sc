@@ -21,7 +21,7 @@ theme: /
             }
             $session.khub_baseurl = "https://khub.just-ai.com";
         random: 
-            a: Здравствуйте! Я помогу найти ответы на вопросы по вашей Базе Знаний.
+            a: Здравствуйте! Я помогу найти ответы на вопросы по вашей Базе Знаний. 
             
     state: Education
         intentGroup!: /KnowledgeBase/FAQ.Общие вопросы
